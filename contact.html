@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Frequently Asked Questions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="kwikapay-sidebar kwikapay-blue kwikapay-collapse kwikapay-top kwikapay-large kwikapay-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="kwikapay_close()" class="kwikapay-button kwikapay-hide-large kwikapay-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="kwikapay-container">
+    <h3 class="kwikapay-padding-64"><b>Kwikapay</b></h3>
+  </div>
+  <div class="kwikapay-bar-block">
+    <a href="index.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Home</a> 
+    <div class="dropdown">
+    <button class="dropbtn">Company
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms and Conditions</a>
+    </div>
+  </div> 
+    <a href="services.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Services</a> 
+    <a href="faqs.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">FAQs</a> 
+    <a href="contact.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Contact</a> 
+    <a href="sign-in.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Sign In</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="kwikapay-container kwikapay-top kwikapay-hide-large kwikapay-blue kwikapay-xlarge kwikapay-padding">
+  <a href="javascript:void(0)" class="kwikapay-button kwikapay-blue kwikapay-margin-right" onclick="kwikapay_open()">☰</a>
+  <span>Kwikapay</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="kwikapay-overlay kwikapay-hide-large" onclick="kwikapay_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="kwikapay-main" style="margin-left:340px;margin-right:40px">
+
+
+<!-- Contact -->
+<div class="kwikapay-container" id="contact" style="margin-top:75px">
+  <h2>Contact Us</h2>
+  <p>If you have an query, please get in touch with us, we will revert back quickly.</p>
+  
+  <div class="kwikapay-row-padding">
+    <!-- Form now on the left -->
+    <div class="kwikapay-half" style="margin-bottom:20px;">
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value="australia">Lagos</option>
+            <option value="canada">Ogun</option>
+            <option value="usa">Abuja</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <!-- Image now on the right -->
+    <div class="kwikapay-half">
+      <img src="kwikapay6.jpg" style="width:100%" onclick="onClick(this)" alt="contact">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- kwikapay.CSS Container -->
+<div class="kwikapay-light-grey kwikapay-container kwikapay-padding-20" style="margin-top:75px;padding-right:58px"><p class="kwikapay-right">Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function kwikapay_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function kwikapay_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

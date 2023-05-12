@@ -1,0 +1,354 @@
+/* kwikapay.CSS */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+/* body */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.kwikapay-serif{font-family:serif}.kwikapay-sans-serif{font-family:sans-serif}.kwikapay-cursive{font-family:cursive}.kwikapay-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.kwikapay-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.kwikapay-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.kwikapay-table,.kwikapay-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.kwikapay-table-all{border:1px solid #ccc}
+.kwikapay-bordeblue tr,.kwikapay-table-all tr{border-bottom:1px solid #ddd}.kwikapay-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.kwikapay-table-all tr:nth-child(odd){background-color:#fff}.kwikapay-table-all tr:nth-child(even){background-color:#f1f1f1}
+.kwikapay-hoverable tbody tr:hover,.kwikapay-ul.kwikapay-hoverable li:hover{background-color:#ccc}.kwikapay-centeblue tr th,.kwikapay-centeblue tr td{text-align:center}
+.kwikapay-table td,.kwikapay-table th,.kwikapay-table-all td,.kwikapay-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.kwikapay-table th:first-child,.kwikapay-table td:first-child,.kwikapay-table-all th:first-child,.kwikapay-table-all td:first-child{padding-left:16px}
+.kwikapay-btn,.kwikapay-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.kwikapay-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.kwikapay-btn,.kwikapay-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.kwikapay-disabled,.kwikapay-btn:disabled,.kwikapay-button:disabled{cursor:not-allowed;opacity:0.3}.kwikapay-disabled *,:disabled *{pointer-events:none}
+.kwikapay-btn.kwikapay-disabled:hover,.kwikapay-btn:disabled:hover{box-shadow:none}
+.kwikapay-badge,.kwikapay-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.kwikapay-badge{border-radius:50%}
+.kwikapay-ul{list-style-type:none;padding:0;margin:0}.kwikapay-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.kwikapay-ul li:last-child{border-bottom:none}
+.kwikapay-tooltip,.kwikapay-display-container{position:relative}.kwikapay-tooltip .kwikapay-text{display:none}.kwikapay-tooltip:hover .kwikapay-text{display:inline-block}
+.kwikapay-ripple:active{opacity:0.5}.kwikapay-ripple{transition:opacity 0s}
+.kwikapay-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.kwikapay-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.kwikapay-dropdown-click,.kwikapay-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.kwikapay-dropdown-hover:hover .kwikapay-dropdown-content{display:block}
+.kwikapay-dropdown-hover:first-child,.kwikapay-dropdown-click:hover{background-color:#ccc;color:#000}
+.kwikapay-dropdown-hover:hover > .kwikapay-button:first-child,.kwikapay-dropdown-click:hover > .kwikapay-button:first-child{background-color:#ccc;color:#000}
+.kwikapay-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.kwikapay-check,.kwikapay-radio{width:24px;height:24px;position:relative;top:6px}
+.kwikapay-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.kwikapay-bar-block .kwikapay-dropdown-hover,.kwikapay-bar-block .kwikapay-dropdown-click{width:100%}
+.kwikapay-bar-block .kwikapay-dropdown-hover .kwikapay-dropdown-content,.kwikapay-bar-block .kwikapay-dropdown-click .kwikapay-dropdown-content{min-width:100%}
+.kwikapay-bar-block .kwikapay-dropdown-hover .kwikapay-button,.kwikapay-bar-block .kwikapay-dropdown-click .kwikapay-button{width:100%;text-align:left;padding:8px 16px}
+.kwikapay-main,#main{transition:margin-left .4s}
+.kwikapay-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.kwikapay-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.kwikapay-bar{width:100%;overflow:hidden}.kwikapay-center .kwikapay-bar{display:inline-block;width:auto}
+.kwikapay-bar .kwikapay-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.kwikapay-bar .kwikapay-dropdown-hover,.kwikapay-bar .kwikapay-dropdown-click{position:static;float:left}
+.kwikapay-bar .kwikapay-button{white-space:normal}
+.kwikapay-bar-block .kwikapay-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.kwikapay-bar-block.kwikapay-center .kwikapay-bar-item{text-align:center}.kwikapay-block{display:block;width:100%}
+.kwikapay-responsive{display:block;overflow-x:auto}
+.kwikapay-container:after,.kwikapay-container:before,.kwikapay-panel:after,.kwikapay-panel:before,.kwikapay-row:after,.kwikapay-row:before,.kwikapay-row-padding:after,.kwikapay-row-padding:before,
+.kwikapay-cell-row:before,.kwikapay-cell-row:after,.kwikapay-clear:after,.kwikapay-clear:before,.kwikapay-bar:before,.kwikapay-bar:after{content:"";display:table;clear:both}
+.kwikapay-col,.kwikapay-half,.kwikapay-third,.kwikapay-twothird,.kwikapay-threequarter,.kwikapay-quarter{float:left;width:100%}
+.kwikapay-col.s1{width:8.33333%}.kwikapay-col.s2{width:16.66666%}.kwikapay-col.s3{width:24.99999%}.kwikapay-col.s4{width:33.33333%}
+.kwikapay-col.s5{width:41.66666%}.kwikapay-col.s6{width:49.99999%}.kwikapay-col.s7{width:58.33333%}.kwikapay-col.s8{width:66.66666%}
+.kwikapay-col.s9{width:74.99999%}.kwikapay-col.s10{width:83.33333%}.kwikapay-col.s11{width:91.66666%}.kwikapay-col.s12{width:99.99999%}
+@media (min-width:601px){.kwikapay-col.m1{width:8.33333%}.kwikapay-col.m2{width:16.66666%}.kwikapay-col.m3,.kwikapay-quarter{width:24.99999%}.kwikapay-col.m4,.kwikapay-third{width:33.33333%}
+.kwikapay-col.m5{width:41.66666%}.kwikapay-col.m6,.kwikapay-half{width:49.99999%}.kwikapay-col.m7{width:58.33333%}.kwikapay-col.m8,.kwikapay-twothird{width:66.66666%}
+.kwikapay-col.m9,.kwikapay-threequarter{width:74.99999%}.kwikapay-col.m10{width:83.33333%}.kwikapay-col.m11{width:91.66666%}.kwikapay-col.m12{width:99.99999%}}
+@media (min-width:993px){.kwikapay-col.l1{width:8.33333%}.kwikapay-col.l2{width:16.66666%}.kwikapay-col.l3{width:24.99999%}.kwikapay-col.l4{width:33.33333%}
+.kwikapay-col.l5{width:41.66666%}.kwikapay-col.l6{width:49.99999%}.kwikapay-col.l7{width:58.33333%}.kwikapay-col.l8{width:66.66666%}
+.kwikapay-col.l9{width:74.99999%}.kwikapay-col.l10{width:83.33333%}.kwikapay-col.l11{width:91.66666%}.kwikapay-col.l12{width:99.99999%}}
+.kwikapay-rest{overflow:hidden}.kwikapay-stretch{margin-left:-16px;margin-right:-16px}
+.kwikapay-content,.kwikapay-auto{margin-left:auto;margin-right:auto}.kwikapay-content{max-width:980px}.kwikapay-auto{max-width:1140px}
+.kwikapay-cell-row{display:table;width:100%}.kwikapay-cell{display:table-cell}
+.kwikapay-cell-top{vertical-align:top}.kwikapay-cell-middle{vertical-align:middle}.kwikapay-cell-bottom{vertical-align:bottom}
+.kwikapay-hide{display:none!important}.kwikapay-show-block,.kwikapay-show{display:block!important}.kwikapay-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.kwikapay-auto{max-width:95%}}
+@media (max-width:600px){.kwikapay-modal-content{margin:0 10px;width:auto!important}.kwikapay-modal{padding-top:30px}
+.kwikapay-dropdown-hover.kwikapay-mobile .kwikapay-dropdown-content,.kwikapay-dropdown-click.kwikapay-mobile .kwikapay-dropdown-content{position:relative}	
+.kwikapay-hide-small{display:none!important}.kwikapay-mobile{display:block;width:100%!important}.kwikapay-bar-item.kwikapay-mobile,.kwikapay-dropdown-hover.kwikapay-mobile,.kwikapay-dropdown-click.kwikapay-mobile{text-align:center}
+.kwikapay-dropdown-hover.kwikapay-mobile,.kwikapay-dropdown-hover.kwikapay-mobile .kwikapay-btn,.kwikapay-dropdown-hover.kwikapay-mobile .kwikapay-button,.kwikapay-dropdown-click.kwikapay-mobile,.kwikapay-dropdown-click.kwikapay-mobile .kwikapay-btn,.kwikapay-dropdown-click.kwikapay-mobile .kwikapay-button{width:100%}}
+@media (max-width:768px){.kwikapay-modal-content{width:500px}.kwikapay-modal{padding-top:50px}}
+@media (min-width:993px){.kwikapay-modal-content{width:900px}.kwikapay-hide-large{display:none!important}.kwikapay-sidebar.kwikapay-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.kwikapay-hide-medium{display:none!important}}
+@media (max-width:992px){.kwikapay-sidebar.kwikapay-collapse{display:none}.kwikapay-main{margin-left:0!important;margin-right:0!important}.kwikapay-auto{max-width:100%}}
+.kwikapay-top,.kwikapay-bottom{position:fixed;width:100%;z-index:1}.kwikapay-top{top:0}.kwikapay-bottom{bottom:0}
+.kwikapay-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.kwikapay-display-topleft{position:absolute;left:0;top:0}.kwikapay-display-topright{position:absolute;right:0;top:0}
+.kwikapay-display-bottomleft{position:absolute;left:0;bottom:0}.kwikapay-display-bottomright{position:absolute;right:0;bottom:0}
+.kwikapay-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.kwikapay-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.kwikapay-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.kwikapay-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.kwikapay-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.kwikapay-display-container:hover .kwikapay-display-hover{display:block}.kwikapay-display-container:hover span.kwikapay-display-hover{display:inline-block}.kwikapay-display-hover{display:none}
+.kwikapay-display-position{position:absolute}
+.kwikapay-circle{border-radius:50%}
+.kwikapay-round-small{border-radius:2px}.kwikapay-round,.kwikapay-round-medium{border-radius:4px}.kwikapay-round-large{border-radius:8px}.kwikapay-round-xlarge{border-radius:16px}.kwikapay-round-xxlarge{border-radius:32px}
+.kwikapay-row-padding,.kwikapay-row-padding>.kwikapay-half,.kwikapay-row-padding>.kwikapay-third,.kwikapay-row-padding>.kwikapay-twothird,.kwikapay-row-padding>.kwikapay-threequarter,.kwikapay-row-padding>.kwikapay-quarter,.kwikapay-row-padding>.kwikapay-col{padding:0 8px}
+.kwikapay-container,.kwikapay-panel{padding:0.01em 16px}.kwikapay-panel{margin-top:16px;margin-bottom:16px}
+.kwikapay-code,.kwikapay-codespan{font-family:Consolas,"courier new";font-size:16px}
+.kwikapay-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.kwikapay-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.kwikapay-card,.kwikapay-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.kwikapay-card-4,.kwikapay-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.kwikapay-spin{animation:kwikapay-spin 2s infinite linear}@keyframes kwikapay-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.kwikapay-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.kwikapay-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.kwikapay-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.kwikapay-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.kwikapay-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.kwikapay-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.kwikapay-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.kwikapay-animate-input{transition:width 0.4s ease-in-out}.kwikapay-animate-input:focus{width:100%!important}
+.kwikapay-opacity,.kwikapay-hover-opacity:hover{opacity:0.60}.kwikapay-opacity-off,.kwikapay-hover-opacity-off:hover{opacity:1}
+.kwikapay-opacity-max{opacity:0.25}.kwikapay-opacity-min{opacity:0.75}
+.kwikapay-greyscale-max,.kwikapay-grayscale-max,.kwikapay-hover-greyscale:hover,.kwikapay-hover-grayscale:hover{filter:grayscale(100%)}
+.kwikapay-greyscale,.kwikapay-grayscale{filter:grayscale(75%)}.kwikapay-greyscale-min,.kwikapay-grayscale-min{filter:grayscale(50%)}
+.kwikapay-sepia{filter:sepia(75%)}.kwikapay-sepia-max,.kwikapay-hover-sepia:hover{filter:sepia(100%)}.kwikapay-sepia-min{filter:sepia(50%)}
+.kwikapay-tiny{font-size:10px!important}.kwikapay-small{font-size:12px!important}.kwikapay-medium{font-size:15px!important}.kwikapay-large{font-size:18px!important}
+.kwikapay-xlarge{font-size:24px!important}.kwikapay-xxlarge{font-size:36px!important}.kwikapay-xxxlarge{font-size:48px!important}.kwikapay-jumbo{font-size:64px!important}
+.kwikapay-left-align{text-align:left!important}.kwikapay-right-align{text-align:right!important}.kwikapay-justify{text-align:justify!important}.kwikapay-center{text-align:center!important}
+.kwikapay-border-0{border:0!important}.kwikapay-border{border:1px solid #ccc!important}
+.kwikapay-border-top{border-top:1px solid #ccc!important}.kwikapay-border-bottom{border-bottom:1px solid #ccc!important}
+.kwikapay-border-left{border-left:1px solid #ccc!important}.kwikapay-border-right{border-right:1px solid #ccc!important}
+.kwikapay-topbar{border-top:6px solid #ccc!important}.kwikapay-bottombar{border-bottom:6px solid #ccc!important}
+.kwikapay-leftbar{border-left:6px solid #ccc!important}.kwikapay-rightbar{border-right:6px solid #ccc!important}
+.kwikapay-section,.kwikapay-code{margin-top:16px!important;margin-bottom:16px!important}
+.kwikapay-margin{margin:16px!important}.kwikapay-margin-top{margin-top:16px!important}.kwikapay-margin-bottom{margin-bottom:16px!important}
+.kwikapay-margin-left{margin-left:16px!important}.kwikapay-margin-right{margin-right:16px!important}
+.kwikapay-padding-small{padding:4px 8px!important}.kwikapay-padding{padding:8px 16px!important}.kwikapay-padding-large{padding:12px 24px!important}
+.kwikapay-padding-16{padding-top:16px!important;padding-bottom:16px!important}.kwikapay-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.kwikapay-padding-32{padding-top:32px!important;padding-bottom:32px!important}.kwikapay-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.kwikapay-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.kwikapay-padding-top-64{padding-top:64px!important}.kwikapay-padding-top-48{padding-top:48px!important}
+.kwikapay-padding-top-32{padding-top:32px!important}.kwikapay-padding-top-24{padding-top:24px!important}
+.kwikapay-left{float:left!important}.kwikapay-right{float:right!important}
+.kwikapay-button:hover{color:#000!important;background-color:#ccc!important}
+.kwikapay-transparent,.kwikapay-hover-none:hover{background-color:transparent!important}
+.kwikapay-hover-none:hover{box-shadow:none!important}
+
+/* Colors */
+.kwikapay-blue,.kwikapay-hover-blue:hover{color:#fff!important;background-color:#0074c6!important}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+.kwikapay-blue-grey,.kwikapay-hover-blue-grey:hover,.kwikapay-blue-gray,.kwikapay-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.kwikapay-grey,.kwikapay-hover-grey:hover,.kwikapay-gray,.kwikapay-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.kwikapay-light-grey,.kwikapay-hover-light-grey:hover,.kwikapay-light-gray,.kwikapay-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.kwikapay-dark-grey,.kwikapay-hover-dark-grey:hover,.kwikapay-dark-gray,.kwikapay-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.kwikapay-pale-blue,.kwikapay-hover-pale-blue:hover{color:#000!important;background-color:#ffdddd!important}
+.kwikapay-text-blue,.kwikapay-hover-text-blue:hover{color:#0074c6!important}
+.kwikapay-border-blue,.kwikapay-hover-border-blue:hover{border-color:#0074c6!important}
+.kwikapay-border-pale-blue,.kwikapay-hover-border-pale-blue:hover{border-color:#ffe7e7!important}.kwikapay-border-pale-green,.kwikapay-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a blue background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #0074C6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #0074C6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #011034;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}

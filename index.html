@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kwikapay - Transactions made Kwika</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="kwikapay-sidebar kwikapay-blue kwikapay-collapse kwikapay-top kwikapay-large kwikapay-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="kwikapay_close()" class="kwikapay-button kwikapay-hide-large kwikapay-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="kwikapay-container">
+    <h3 class="kwikapay-padding-64"><b>Kwikapay</b></h3>
+  </div>
+  <div class="kwikapay-bar-block">
+    <a href="index.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Home</a> 
+    <div class="dropdown">
+    <button class="dropbtn">Company
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms and Conditions</a>
+    </div>
+  </div> 
+    <a href="services.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Services</a> 
+    <a href="faqs.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">FAQs</a> 
+    <a href="contact.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Contact</a> 
+    <a href="sign-in.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Sign In</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="kwikapay-container kwikapay-top kwikapay-hide-large kwikapay-blue kwikapay-xlarge kwikapay-padding">
+  <a href="javascript:void(0)" class="kwikapay-button kwikapay-blue kwikapay-margin-right" onclick="kwikapay_open()">☰</a>
+  <span>Kwikapay</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="kwikapay-overlay kwikapay-hide-large" onclick="kwikapay_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="kwikapay-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+<div class="kwikapay-container" style="margin-top:70px" id="showcase">
+  <h2>Transactions made Kwika</h2>
+  <p>Kwikapay empowers users to kwikly purchase airtime, data, and settle their cable TV, electricity, and educational bills with ease.</p>
+</div>
+
+<!-- Photo grid (modal) -->
+<div class="kwikapay-row-padding">
+  <div class="kwikapay-half">
+    <img src="kwikapay9.png" style="width:100%" alt="Kwikapay banner 9">
+    <!-- Download Button -->
+    <div style="text-align: center; margin-top:30px;">
+      <a href="sign-in.html">
+        <button class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Web Platform? Sign In</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="kwikapay-half">
+    <img src="kwikapay8.jpg" style="width:100%" alt="Kwikapay banner 8">
+    <!-- Download Button -->
+    <div style="text-align: center; margin-top:30px;">
+      <a href="https://app.kwikapay.com" target="_blank">
+        <button class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Download Kwikapay App</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- User Reviews -->
+<div class="kwikapay-container" style="margin-top:30px">
+  <h3>User Reviews</h3>
+  <ul>
+    <li>
+      <h5>Adekunle</h5>
+      <p>Finally an easy to use all-in-one app, being developed for an average person, extremely low fees that is almost free and very responsive developer team.</p>
+    </li>
+    <li>
+      <h5>Johnson</h5>
+      <p>The interface is easy to navigate and I find everything I need quickly. There are only two fintechs I know Kwikapay and the rest. Kwikapay is the best.</p>
+    </li>
+    <li>
+      <h5>Ouwafemi</h5>
+      <p>Kwikapay will deliver nothing less than the best from expertise and professionalism to top-notch communication. You're sure to be impressed with Kwikapay!</p>
+    </li>
+  </ul>
+</div>
+
+<!-- HTML table -->
+<div class="kwikapay-container" style="margin-top:30px">
+  <h3>Earn with Kwikapay</h3>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Responsive table */
+    @media screen and (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr {
+        border: 1px solid #ccc;
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+      }
+      td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+      td:nth-of-type(1):before { content: "Service"; }
+      td:nth-of-type(2):before { content: "Referral"; }
+      td:nth-of-type(3):before { content: "API"; }
+    }
+  </style>
+  <table>
+    <thead>
+      <tr>
+        <th>Service</th>
+		<th>Referral</th>
+		<th>API</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Airtime</td>
+        <td>3.50%</td>
+		<td>1.50%</td>
+      </tr>
+	  <tr>
+        <td>Data</td>
+        <td>3.00%</td>
+        <td>1.10%</td>
+      </tr>
+	  <tr>
+        <td>TV Payments</td>
+        <td>5.00%</td>
+        <td>1.20%</td>
+      </tr>
+	  <tr>
+        <td>Electricity Payments</td>
+        <td>2.00%</td>
+        <td>3.20%</td>
+      </tr>
+	  <tr>
+        <td>Educational Payments</td>
+        <td>4.00%</td>
+        <td>2.20%</td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- kwikapay.CSS Container -->
+<div class="kwikapay-light-grey kwikapay-container kwikapay-padding-20" style="margin-top:75px;padding-right:58px"><p class="kwikapay-right">Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function kwikapay_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function kwikapay_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
