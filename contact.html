@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Frequently Asked Questions</title>
+<title>Contact  - Kwikapay</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<meta name="description" content="If you have a query, please get in touch with us, we will revert back quickly.">
+
+<!-- Favicon -->
+<link rel="icon" href="Kwikapay-Favicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -12,7 +16,9 @@
 <nav class="kwikapay-sidebar kwikapay-blue kwikapay-collapse kwikapay-top kwikapay-large kwikapay-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="kwikapay_close()" class="kwikapay-button kwikapay-hide-large kwikapay-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="kwikapay-container">
-    <h3 class="kwikapay-padding-64"><b>Kwikapay</b></h3>
+    <a href="index.html">
+      <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-64">
+    </a>
   </div>
   <div class="kwikapay-bar-block">
     <a href="index.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Home</a> 
@@ -35,7 +41,9 @@
 <!-- Top menu on small screens -->
 <header class="kwikapay-container kwikapay-top kwikapay-hide-large kwikapay-blue kwikapay-xlarge kwikapay-padding">
   <a href="javascript:void(0)" class="kwikapay-button kwikapay-blue kwikapay-margin-right" onclick="kwikapay_open()">☰</a>
-  <span>Kwikapay</span>
+  <a href="index.html">
+    <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-10">
+  </a>  
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -48,25 +56,25 @@
 <!-- Contact -->
 <div class="kwikapay-container" id="contact" style="margin-top:75px">
   <h2>Contact Us</h2>
-  <p>If you have an query, please get in touch with us, we will revert back quickly.</p>
+  <p>If you have a query, please get in touch with us, we will revert back quickly.</p>
   
   <div class="kwikapay-row-padding">
     <!-- Form now on the left -->
     <div class="kwikapay-half" style="margin-bottom:20px;">
       <div class="container">
-        <form action="action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <form id="contactForm" action="https://webdevbasics.net/scripts/demo.php" method="POST">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="Name" placeholder="Your first & last name..">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="Email" placeholder="Your email address..">
           <label for="state">State</label>
-          <select id="state" name="state">
-            <option value="australia">Lagos</option>
-            <option value="canada">Ogun</option>
-            <option value="usa">Abuja</option>
+          <select id="state" name="State">
+            <option value="Lagos">Lagos</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Abuja">Abuja</option>
           </select>
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
+          <textarea id="subject" name="Subject" placeholder="Write something.." style="height:130px"></textarea>
           <input type="submit" value="Submit">
         </form>
       </div>
@@ -74,18 +82,21 @@
 
     <!-- Image now on the right -->
     <div class="kwikapay-half">
-      <img src="kwikapay6.jpg" style="width:100%" onclick="onClick(this)" alt="contact">
+      <img src="Contact-Banner.jpg" style="width:100%" onclick="onClick(this)" alt="Contact Banner">
     </div>
   </div>
 </div>
 
-
-
 <!-- End page content -->
-</div>
 
-<!-- kwikapay.CSS Container -->
-<div class="kwikapay-light-grey kwikapay-container kwikapay-padding-20" style="margin-top:75px;padding-right:58px"><p class="kwikapay-right">Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p></div>
+<!-- Footer -->
+<div class="kwikapay-container kwikapay-blue kwikapay-padding-10" style="margin-top: 70px;">
+  <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Facebook</a>
+  <a href="https://twitter.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Twitter</a>
+  <a href="https://instagram.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Instagram</a>
+  <p class="kwikapay-medium">© 2023 Kwikapay. All rights reserved. Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p>
+</div>
 
 <script>
 // Script to open and close sidebar
@@ -106,24 +117,19 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-</script>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+// Process the form data
+function processForm(event) {
+  event.preventDefault(); // Prevent form submission
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+  // Get form values
+  var name = document.getElementById("fname").value;
+  var email = document.getElementById("email").value;
+  var state = document.getElementById("state").value;
+  var subject = document.getElementById("subject").value;
 }
 </script>
 
+</div>
 </body>
 </html>

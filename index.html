@@ -5,6 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<meta name="description" content="Kwikapay enables its users to kwikly buy airtime, data and pay their cable tv, electricity and educational bills.">
+
+<!-- Favicon -->
+<link rel="icon" href="Kwikapay-Favicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -12,7 +16,9 @@
 <nav class="kwikapay-sidebar kwikapay-blue kwikapay-collapse kwikapay-top kwikapay-large kwikapay-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="kwikapay_close()" class="kwikapay-button kwikapay-hide-large kwikapay-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="kwikapay-container">
-    <h3 class="kwikapay-padding-64"><b>Kwikapay</b></h3>
+    <a href="index.html">
+      <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-64">
+    </a>    
   </div>
   <div class="kwikapay-bar-block">
     <a href="index.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Home</a> 
@@ -35,7 +41,9 @@
 <!-- Top menu on small screens -->
 <header class="kwikapay-container kwikapay-top kwikapay-hide-large kwikapay-blue kwikapay-xlarge kwikapay-padding">
   <a href="javascript:void(0)" class="kwikapay-button kwikapay-blue kwikapay-margin-right" onclick="kwikapay_open()">☰</a>
-  <span>Kwikapay</span>
+  <a href="index.html">
+    <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-10">
+  </a>  
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -53,22 +61,18 @@
 <!-- Photo grid (modal) -->
 <div class="kwikapay-row-padding">
   <div class="kwikapay-half">
-    <img src="kwikapay9.png" style="width:100%" alt="Kwikapay banner 9">
+    <img src="Kwikapay-Home-Banner-1.png" style="width:100%" alt="Kwikapay-Home-Banner-1">
     <!-- Download Button -->
     <div style="text-align: center; margin-top:30px;">
-      <a href="sign-in.html">
-        <button class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Web Platform? Sign In</button>
-      </a>
+      <a href="sign-in.html" target="_blank" class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Web Platform? Sign In</a>
     </div>
   </div>
 
   <div class="kwikapay-half">
-    <img src="kwikapay8.jpg" style="width:100%" alt="Kwikapay banner 8">
+    <img src="Kwikapay-Home-Banner-2.jpg" style="width:100%" alt="Kwikapay Home Banner 2">
     <!-- Download Button -->
     <div style="text-align: center; margin-top:30px;">
-      <a href="https://app.kwikapay.com" target="_blank">
-        <button class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Download Kwikapay App</button>
-      </a>
+      <a href="https://www.behance.net/gallery/150981241/KWIKAPAY-BRAND-IDENTITY" target="_blank" class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Kwikapay Brand Identity</a>
     </div>
   </div>
 </div>
@@ -96,58 +100,12 @@
 <!-- HTML table -->
 <div class="kwikapay-container" style="margin-top:30px">
   <h3>Earn with Kwikapay</h3>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-
-    /* Responsive table */
-    @media screen and (max-width: 600px) {
-      table, thead, tbody, th, td, tr {
-        display: block;
-      }
-      thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-      }
-      tr {
-        border: 1px solid #ccc;
-      }
-      td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-      }
-      td:before {
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-      }
-      td:nth-of-type(1):before { content: "Service"; }
-      td:nth-of-type(2):before { content: "Referral"; }
-      td:nth-of-type(3):before { content: "API"; }
-    }
-  </style>
-  <table>
+  <table class="kwikapay-table kwikapay-striped kwikapay-bordered">
     <thead>
       <tr>
         <th>Service</th>
-		<th>Referral</th>
-		<th>API</th>
+	  <th>Referral</th>
+	  <th>API</th>
       </tr>
     </thead>
     <tbody>
@@ -176,31 +134,32 @@
         <td>4.00%</td>
         <td>2.20%</td>
       </tr>
-      <!-- Add more rows as needed -->
     </tbody>
   </table>
 </div>
 
-
-
-<!-- End page content -->
+<!-- Footer -->
+<div class="kwikapay-container kwikapay-blue kwikapay-padding-10" style="margin-top: 70px;">
+  <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Facebook</a>
+  <a href="https://twitter.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Twitter</a>
+  <a href="https://instagram.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Instagram</a>
+  <p class="kwikapay-medium">© 2023 Kwikapay. All rights reserved. Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p>
 </div>
 
-<!-- kwikapay.CSS Container -->
-<div class="kwikapay-light-grey kwikapay-container kwikapay-padding-20" style="margin-top:75px;padding-right:58px"><p class="kwikapay-right">Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p></div>
-
 <script>
-// Script to open and close sidebar
-function kwikapay_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function kwikapay_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+  // Script to open and close sidebar
+  function kwikapay_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function kwikapay_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
 </script>
 
+</div>
 </body>
 </html>
