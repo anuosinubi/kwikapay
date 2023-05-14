@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kwikapay - Transactions made Kwika</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Kwikapay enables its users to kwikly buy airtime, data and pay their cable tv, electricity and educational bills.">
+
+<!-- Favicon -->
+<link rel="icon" href="Kwikapay-Favicon.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="kwikapay-sidebar kwikapay-blue kwikapay-collapse kwikapay-top kwikapay-large kwikapay-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="kwikapay_close()" class="kwikapay-button kwikapay-hide-large kwikapay-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="kwikapay-container">
+    <a href="index.html">
+      <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-64">
+    </a>    
+  </div>
+  <div class="kwikapay-bar-block">
+    <a href="index.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Home</a> 
+    <div class="dropdown">
+    <button class="dropbtn">Company
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms and Conditions</a>
+    </div>
+  </div> 
+    <a href="services.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Services</a> 
+    <a href="faqs.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">FAQs</a> 
+    <a href="contact.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Contact</a> 
+    <a href="sign-in.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Sign In</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="kwikapay-container kwikapay-top kwikapay-hide-large kwikapay-blue kwikapay-xlarge kwikapay-padding">
+  <a href="javascript:void(0)" class="kwikapay-button kwikapay-blue kwikapay-margin-right" onclick="kwikapay_open()">☰</a>
+  <a href="index.html">
+    <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-10">
+  </a>  
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="kwikapay-overlay kwikapay-hide-large" onclick="kwikapay_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="kwikapay-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+<div class="kwikapay-container" style="margin-top:70px" id="showcase">
+  <h2>Transactions made Kwika</h2>
+  <p>Kwikapay empowers users to kwikly purchase airtime, data, and settle their cable TV, electricity, and educational bills with ease.</p>
+</div>
+
+<!-- Photo grid (modal) -->
+<div class="kwikapay-row-padding">
+  <div class="kwikapay-half">
+    <img src="Kwikapay-Home-Banner-1.png" style="width:100%" alt="Kwikapay-Home-Banner-1">
+    <!-- Download Button -->
+    <div style="text-align: center; margin-top:30px;">
+      <a href="sign-in.html" target="_blank" class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Web Platform? Sign In</a>
+    </div>
+  </div>
+
+  <div class="kwikapay-half">
+    <img src="Kwikapay-Home-Banner-2.jpg" style="width:100%" alt="Kwikapay Home Banner 2">
+    <!-- Download Button -->
+    <div style="text-align: center; margin-top:30px;">
+      <a href="https://www.behance.net/gallery/150981241/KWIKAPAY-BRAND-IDENTITY" target="_blank" class="kwikapay-button kwikapay-blue kwikapay-padding-large kwikapay-hover-black">Kwikapay Brand Identity</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- User Reviews -->
+<div class="kwikapay-container" style="margin-top:30px">
+  <h3>User Reviews</h3>
+  <ul>
+    <li>
+      <h5>Adekunle</h5>
+      <p>Finally an easy to use all-in-one app, being developed for an average person, extremely low fees that is almost free and very responsive developer team.</p>
+    </li>
+    <li>
+      <h5>Johnson</h5>
+      <p>The interface is easy to navigate and I find everything I need quickly. There are only two fintechs I know Kwikapay and the rest. Kwikapay is the best.</p>
+    </li>
+    <li>
+      <h5>Ouwafemi</h5>
+      <p>Kwikapay will deliver nothing less than the best from expertise and professionalism to top-notch communication. You're sure to be impressed with Kwikapay!</p>
+    </li>
+  </ul>
+</div>
+
+<!-- HTML table -->
+<div class="kwikapay-container" style="margin-top:30px">
+  <h3>Earn with Kwikapay</h3>
+  <table class="kwikapay-table kwikapay-striped kwikapay-bordered">
+    <thead>
+      <tr>
+        <th>Service</th>
+	  <th>Referral</th>
+	  <th>API</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Airtime</td>
+        <td>3.50%</td>
+		<td>1.50%</td>
+      </tr>
+	  <tr>
+        <td>Data</td>
+        <td>3.00%</td>
+        <td>1.10%</td>
+      </tr>
+	  <tr>
+        <td>TV Payments</td>
+        <td>5.00%</td>
+        <td>1.20%</td>
+      </tr>
+	  <tr>
+        <td>Electricity Payments</td>
+        <td>2.00%</td>
+        <td>3.20%</td>
+      </tr>
+	  <tr>
+        <td>Educational Payments</td>
+        <td>4.00%</td>
+        <td>2.20%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Footer -->
+<div class="kwikapay-container kwikapay-blue kwikapay-padding-10" style="margin-top: 70px;">
+  <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Facebook</a>
+  <a href="https://twitter.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Twitter</a>
+  <a href="https://instagram.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Instagram</a>
+  <p class="kwikapay-medium">© 2023 Kwikapay. All rights reserved. Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p>
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function kwikapay_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function kwikapay_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+</div>
+</body>
+</html>

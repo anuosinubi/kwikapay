@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sign In  - Kwikapay</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Login to start transacting kwika.">
+
+<!-- Favicon -->
+<link rel="icon" href="Kwikapay-Favicon.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="kwikapay-sidebar kwikapay-blue kwikapay-collapse kwikapay-top kwikapay-large kwikapay-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="kwikapay_close()" class="kwikapay-button kwikapay-hide-large kwikapay-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="kwikapay-container">
+    <a href="index.html">
+      <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-64">
+    </a>
+  </div>
+  <div class="kwikapay-bar-block">
+    <a href="index.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Home</a> 
+    <div class="dropdown">
+    <button class="dropbtn">Company
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms and Conditions</a>
+    </div>
+  </div> 
+    <a href="services.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Services</a> 
+    <a href="faqs.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">FAQs</a> 
+    <a href="contact.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Contact</a> 
+    <a href="sign-in.html" onclick="kwikapay_close()" class="kwikapay-bar-item kwikapay-button kwikapay-hover-white">Sign In</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="kwikapay-container kwikapay-top kwikapay-hide-large kwikapay-blue kwikapay-xlarge kwikapay-padding">
+  <a href="javascript:void(0)" class="kwikapay-button kwikapay-blue kwikapay-margin-right" onclick="kwikapay_open()">☰</a>
+  <a href="index.html">
+    <img src="Kwikapay-Logo.png" alt="Kwikapay Logo" class="kwikapay-padding-10">
+  </a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="kwikapay-overlay kwikapay-hide-large" onclick="kwikapay_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="kwikapay-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="kwikapay-container" style="margin-top:70px" id="showcase">
+    <h2>Sign In</h2>
+  </div>
+  
+  <form action="#" method="post">
+    <div class="imgcontainer">
+      <img src="Sign-In-Avatar.png" alt="Sign In Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+
+  </form>
+
+  <!-- End page content -->
+
+<!-- Footer -->
+<div class="kwikapay-container kwikapay-blue kwikapay-padding-10" style="margin-top: 70px;">
+  <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Facebook</a>
+  <a href="https://twitter.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Twitter</a>
+  <a href="https://instagram.com/kwikapay" class="kwikapay-button kwikapay-light-grey">Instagram</a>
+  <p class="kwikapay-medium">© 2023 Kwikapay. All rights reserved. Developed By <a href="https://www.anuosinubi.com" title="Anuoluwapo Osinubi" target="_blank" class="kwikapay-hover-opacity">Anuoluwapo Osinubi</a></p>
+</div>
+
+<script>
+// Script to open and close sidebar
+function kwikapay_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function kwikapay_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</div>
+</body>
+</html>
